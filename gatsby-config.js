@@ -3,7 +3,15 @@ module.exports = {
     title: "gatsby-mdx-math-example",
   },
   plugins: [
-    "gatsby-plugin-mdx",
+    {
+      resolve: "gatsby-plugin-mdx",
+      options: {
+        defaultLayouts: {
+          default: require.resolve("./src/components/MdxLayout.js"),
+        },
+        remarkPlugins: [require("remark-math")],
+      },
+    },
     {
       resolve: "gatsby-source-filesystem",
       options: {
