@@ -1,0 +1,1 @@
+(self.webpackChunkgatsby_mdx_math_example=self.webpackChunkgatsby_mdx_math_example||[]).push([[978],{3978:function(e,a,s){"use strict";s.r(a)}}]);
